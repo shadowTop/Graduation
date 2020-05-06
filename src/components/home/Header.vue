@@ -16,18 +16,18 @@ el-row(type="flex" justify="center" align="middle")
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator'
-import { mapMutations } from 'vuex'
+import { Component, Vue } from "vue-property-decorator";
+import { mapMutations } from "vuex";
 
 @Component({
 	methods: {
-		...mapMutations('dialog', ['changeShowStatus'])
-	}
+		...mapMutations("dialog", ["changeShowStatus"]),
+	},
 })
 export default class HomeHeader extends Vue {
-	title = 'Smart Home'
-	loginText = '登录'
-	registryText = '注册'
+	title = "物联网云监控系统";
+	loginText = "登录";
+	registryText = "注册";
 }
 </script>
 
@@ -82,5 +82,4 @@ export default class HomeHeader extends Vue {
 		.fa
 			color #666
 			user-select none !important
-
 </style>

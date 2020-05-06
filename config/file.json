@@ -1,15 +1,15 @@
 {
-	"port":8000,
-	"avatar":{
-		"user":"http://127.0.0.1:8000/common/img/user/avatar.png",
-		"family":"http://127.0.0.1:8000/common/img/family/avatar.png",
-		"path":{
-			"user":"D:/Desktop/bulb/assets/avatar/user/",
-			"family":"D:/Desktop/bulb/assets/avatar/family/"
+	"port": 8000,
+	"avatar": {
+		"user": "http://127.0.0.1:8000/common/img/user/avatar.png",
+		"family": "http://127.0.0.1:8000/common/img/family/avatar.png",
+		"path": {
+			"user": "E:/Software/bishe/SmartHome/assets/avatar/user/",
+			"family": "E:/Software/bishe/SmartHome/assets/avatar/family/"
 		},
-		"url":{
-			"user":"http://127.0.0.1:8000/avatar/user/",
-			"family":"http://127.0.0.1:8000/avatar/family/"
+		"url": {
+			"user": "http://127.0.0.1:8000/avatar/user/",
+			"family": "http://127.0.0.1:8000/avatar/family/"
 		}
 	}
 }

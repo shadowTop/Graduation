@@ -1,7 +1,7 @@
 {
 	"url": "mongodb://127.0.0.1:27017/",
-	"user": "admin",
-	"password": "mj11241124",
+	"user": "",
+	"password": "",
 	"db": "SmartHome",
-	"dbUrl":"mongodb://127.0.0.1:27017/SmartHome"
+	"dbUrl": "mongodb://127.0.0.1:27017/SmartHome"
 }

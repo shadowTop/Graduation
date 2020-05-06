@@ -17,4 +17,5 @@
     "sstream": "cpp",
     "xiosbase": "cpp"
   },
+  "totvsLanguageServer.welcomePage": false,
 }

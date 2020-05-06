@@ -1,4 +1,4 @@
 {
-	"privateKey":"D:/Desktop/bulb/config/rsa_private_key.pem",
-	"publicKey": "D:/Desktop/bulb/config/rsa_public_key.pem"
+	"privateKey": "E:/Software/bishe/SmartHome/config/rsa_private_key.pem",
+	"publicKey": "E:/Software/bishe/SmartHome/config/rsa_public_key.pem"
 }

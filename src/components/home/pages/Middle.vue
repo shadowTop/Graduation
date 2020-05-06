@@ -7,25 +7,25 @@ el-row#middle(:span=24)
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator'
-import IconArrow from '~/icons/IconArrow'
+import { Component, Vue } from "vue-property-decorator";
+import IconArrow from "~/icons/IconArrow";
 @Component({
 	components: {
-		IconArrow
+		IconArrow,
 	},
 	filters: {
-		getImg: function(i) {
-			return require(`img/icon${i++}.png`)
-		}
-	}
+		getImg: function (i) {
+			return require(`img/icon${i++}.png`);
+		},
+	},
 })
 export default class MainMiddle extends Vue {
 	infos = [
-		'<p>物物相连的时代</p><br/><p>一个全新的生活方式</p><br/><p>信息产业发展的第三次浪潮</p>',
-		'<p>我们不生产家居</p><br/><p>我们只为她注入思想</p><br/><p>给您带来超酷的科技体验</p>',
-		'<p>情怀所致，以人为本</p><br/><p>专业，让我们更具情怀</p><br/><p>十年深耕 ，让我们更具专业</p>'
-	]
-	bottomColor = ['#5cb8de', '#ea7676','#77d8cc']
+		"<p>物联网云监控系统</p><br/><p>一个全新的生活方式</p>",
+		"<p>全方位的家居环境监测控制系统</p><br/><p>给您带来便捷的服务</p>",
+		"<p>体验升级</p>",
+	];
+	bottomColor = ["#5cb8de", "#ea7676", "#77d8cc"];
 }
 </script>
 
@@ -77,5 +77,4 @@ export default class MainMiddle extends Vue {
 	to
 		opacity 1
 		transform scale(1)
-
 </style>

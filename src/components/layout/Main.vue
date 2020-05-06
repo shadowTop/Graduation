@@ -12,39 +12,39 @@ el-main.main
 </template>
 
 <script>
-import {Component,Vue} from 'vue-property-decorator'
-import {mapState} from 'vuex'
-import {getRandomAnimation} from '@/utils/ui/animation'
-import WeatherCard from '~/weather/Card'
-import ElectricCard from '~/electric/Card'
-import UsagelogChart from '~/usagelog/Chart'
-import ConsumptionCard from '~/consumption/Card'
-import AudioRecorder from '~/audio/Recorder'
+import { Component, Vue } from "vue-property-decorator";
+import { mapState } from "vuex";
+import { getRandomAnimation } from "@/utils/ui/animation";
+import WeatherCard from "~/weather/Card";
+import ElectricCard from "~/electric/Card";
+// import UsagelogChart from '~/usagelog/Chart'
+import ConsumptionCard from "~/consumption/Card";
+import AudioRecorder from "~/audio/Recorder";
 
 @Component({
-	components:{
+	components: {
 		WeatherCard,
 		ElectricCard,
-		UsagelogChart,
+		// UsagelogChart,
 		ConsumptionCard,
 		AudioRecorder
 	},
-	computed:{
-		...mapState('ui',['isHome'])
+	computed: {
+		...mapState("ui", ["isHome"])
 	},
-	watch:{
-		'$route'(to,from){
-			this.changeAnimation()
+	watch: {
+		$route(to, from) {
+			this.changeAnimation();
 		}
 	}
 })
-export default class LayoutMain extends Vue{
-	animation = getRandomAnimation()
-	changeAnimation(){
-		this.animation = getRandomAnimation()
+export default class LayoutMain extends Vue {
+	animation = getRandomAnimation();
+	changeAnimation() {
+		this.animation = getRandomAnimation();
 	}
-	callback (msg) {
-		console.debug('Event: ', msg)
+	callback(msg) {
+		console.debug("Event: ", msg);
 	}
 }
 </script>

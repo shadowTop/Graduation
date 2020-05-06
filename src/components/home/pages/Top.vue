@@ -9,32 +9,39 @@ el-container
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator'
-import IconArrow from '~/icons/IconArrow'
-import SubButton from '~/element/SubButton'
+import { Component, Vue } from "vue-property-decorator";
+import IconArrow from "~/icons/IconArrow";
+import SubButton from "~/element/SubButton";
 
 @Component({
 	components: {
 		IconArrow,
-		SubButton
-	}
+		SubButton,
+	},
 })
 export default class MainTop extends Vue {
-	infos = ['开启全新的生活方式', '物联时代', '用设备管理设备', '让电器不再简单']
-	btnText = '了解更多'
-	img = require('img/device.png')
-	isShow = false
-	hProperty = 'hidden' in document ? 'hidden' : 'webkitHidden' in document ? 'webkitHidden' : 'mozHidden' in document ? 'mozHidden' : 'null'
+	infos = ["物联时代", "全方位监测管理居家环境", "让生活更加便捷安全"];
+	btnText = "了解更多";
+	img = require("img/device.png");
+	isShow = false;
+	hProperty =
+		"hidden" in document
+			? "hidden"
+			: "webkitHidden" in document
+			? "webkitHidden"
+			: "mozHidden" in document
+			? "mozHidden"
+			: "null";
 	created() {
 		window.addEventListener(
-			this.hProperty.replace(/hidden/i, 'visibilitychange'),
+			this.hProperty.replace(/hidden/i, "visibilitychange"),
 			this.show
-		)
-		this.show()
+		);
+		this.show();
 	}
 	show() {
 		if (!document[this.hProperty] && !this.isShow) {
-			this.isShow = true
+			this.isShow = true;
 		}
 	}
 }
